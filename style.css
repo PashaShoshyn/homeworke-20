@@ -1,0 +1,51 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.search-form {
+  margin-bottom: 20px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+}
+
+.photo-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.photo-card img {
+  width: 100%;
+  display: block;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.stats-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.hidden {
+  display: none;
+}
+
+#load-more {
+  margin: 20px auto;
+  display: block;
+  padding: 10px 20px;
+  cursor: pointer;
+}
